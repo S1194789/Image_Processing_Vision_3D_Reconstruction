@@ -19,8 +19,8 @@ sections:
           Z = depth_value
 
       Steps performed:
-        - Load grayscale image (0–255)
-        - Load depth map (.npy)
+        - Load grayscale image (0–255) //
+        - Load depth map (.npy) //
         - Back-project each valid pixel to 3D
         - Construct Nx3 point array
         - Normalize grayscale intensities to [0,1]
