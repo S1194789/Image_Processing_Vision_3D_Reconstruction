@@ -8,7 +8,7 @@ description: >
 
 sections:
 
-  - title: "1. Generate Grayscale 3D Point Cloud"
+  - ## 1. Generate Grayscale 3D Point Cloud
     content: |
       The reconstruction uses the classic pinhole camera model.
 
@@ -26,7 +26,7 @@ sections:
         - Normalize grayscale intensities to [0,1]
         - Save output file: gray_pointcloud.ply
 
-  - title: "2. Compute Intrinsic Matrix K2"
+  - ## 2. Compute Intrinsic Matrix K2 
     content: |
       Intrinsic camera matrix structure:
 
@@ -41,7 +41,7 @@ sections:
         - Construct 3×3 intrinsic matrix (K2)
         - Validate using image width/height
 
-  - title: "3. Colorizing the 3D Point Cloud"
+  - ## 3. Colorizing the 3D Point Cloud
     content: |
       The colorization process projects 3D points into the RGB image plane
       using intrinsic K2 and extrinsic parameters R, T.
@@ -65,7 +65,7 @@ sections:
         - Assign these colors to point cloud
         - Save output file: colored_pointcloud.ply
 
-  - title: "4. Visualization"
+  - ## 4. Visualization
     content: |
       Visualization uses Matplotlib 3D scatter:
 
@@ -74,12 +74,12 @@ sections:
         - Invert Y and Z axes to match camera convention
         - Display interactive 3D plot
 
-  - title: "5. Output Files"
+  - ## 5. Output Files
     content: |
       gray_pointcloud.ply           - grayscale point cloud
       colored_pointcloud.ply        - RGB colored point cloud
 
-  - title: "6. Technologies Used"
+  - ## 6. Technologies Used
     content: |
       Python
       NumPy
